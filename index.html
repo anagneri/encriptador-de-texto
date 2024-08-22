@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2ce30f9d9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__logo">
+            <img class="encabezado__logo__alura" src="assets/aluraLogo.png" alt="Logo Alura">
+            <span class="encabezado__logo__separador"></span>
+            <img class="encabezado__logo__one" src="assets/oneLogo.png" alt="">
+        </div>
+        <div class="encabezado__informacion">
+            <h1 class="encabezado__informacion__titulo">ENCRIPTADOR DE TEXTO</h1>
+            <p class="encabezado__informacion__texto">Convierte tu texto en un código secreto indescifrable. ¡Diviértete encriptando tus mensajes!</p>
+        </div> 
+    </header>
+    <main class="contenido">
+        <section class="contenido__entrada">
+            <textarea class="contenido__entrada__formulario" id="campoEntrada" placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="contenido__entrada__terminos" id="terminos">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p class="terminos__texto">Solo letras minúsculas, sin acentos ni caracteres especiales.</p>
+            </div>
+            <div class="contenido__entrada__btn">
+                <button class="btn__encriptar" id="btnEncriptar" type="button">Encriptar</button>
+                <button class="btn__desencriptar" id="btnDesencriptar" type="button">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenido__salida">
+            <div class="contenido__salida__tarjeta" id="campoTarjeta">
+                <img class="tarjeta__imagen" src="./assets/persona.png" alt="Imagen persona trabajando">
+                <div class="tarjeta__texto">
+                    <p class="texto__uno">Ningún mensaje fue encontrado.</p>
+                    <p class="texto__dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>    
+            </div>
+            <div class="contenido__salida__visualizacion" id="campoVisualizacion">
+                <textarea class="visualizacion__formulario" id="campoSalida" type="mensaje" readonly></textarea>
+                <button class="visualizacion__btn__copiar" id="btnCopiar" type="button">Copiar</button>
+            </div> 
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__menu">
+            <li class="footer__menu__iconos">
+                <a class="iconos" href="https://www.linkedin.com/in/anagneri/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="footer__menu__iconos">
+                <a class="iconos" href="https://github.com/anagneri" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="footer__menu__iconos">                
+                <a class="iconos" href="https://www.instagram.com/anagneri" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+        <h3 class="footer__autor">AG | Ana Gneri</h3>
+        <p class="footer__derechos">Copyright &copy 2024, Ana Gneri. All rights reserved.</p>
+
+    </footer>
+    <script src="js/app.js"></script>  
+</body>
+</html>
